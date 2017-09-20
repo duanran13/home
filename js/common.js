@@ -5,9 +5,11 @@ $(function(){
     });
     //从左到右循环轮播项目。
     $('#Carousel').carousel('cycle');
-    $('.navver li').mouseover(function(){
-        $(this).find('i').css('display','none');
-        $(this).find('span').css('top','0');
+    $('.navver .list-banner').mouseover(function(){
+        $(this).find('.boxL').css('display','none');
+        $(this).find('.boxF').css('display','none');
+        $(this).find('.boxT').css('display','none');
+        $(this).find('span').css('top','5px');
         $(this).css('color','#fff');
         var index = $(this).index();
         if(index == 0){
@@ -19,11 +21,15 @@ $(function(){
         else{
             $(this).css('background','#b2944a');
         }
+        $(this).find('.list').css('display','block');
     })
-    $('.navver li').mouseout(function(){
-        $(this).find('i').css('display','inline');
+    $('.navver .list-banner').mouseout(function(){
         $(this).css('background','#ebf2f8');
+        $(this).find('.boxL').css('display','block');
+        $(this).find('.boxF').css('display','block');
+        $(this).find('.boxT').css('display','block');
         $(this).find('span').css('top','-15px');
         $(this).css('color','#93989c');
+        $(this).find('.list').css('display','none');
     })
 });
