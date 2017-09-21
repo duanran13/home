@@ -139,6 +139,9 @@ ul{
     line-height: 60px;
     font-size: 20px;
 }
+.info{
+    height: 250px;
+}
 .info>div{
     margin-top: 20px;
     font-size: 15px;
@@ -168,4 +171,75 @@ ul{
     font-size: 17px;
     padding-left: 70px;
     color: #93989c;
+}
+span{
+    display:inline-block;
+    *display:inline-block;
+    zoom:1;
+}
+.bg{
+    width:200px;
+    height:15px;
+    border-radius:10px;
+    background:#93989c;
+}
+.main{
+    height:15px;
+    border-radius:10px;
+    background:#0b7bd0;
+}
+.choose{
+    margin-top: 20px;
+}
+
+.info-table,.tab-h{
+    width: 100%;
+}
+.tab-h a{
+    width: 100%;
+    display: inline-block;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background: #fa8d3f;
+    color: #ffffff;
+}
+.tab-h a:hover{
+    color: #ffffff;
+}
+.tab-h span{
+    width: 100%;
+}
+.choose-h{
+    float: left;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background: #eeeeee;
+}
+.choose .info-table .tab-h{
+    height: 80px;
+    border-top: 1px solid #93989c;
+}
+.choose{
+    background: #eeeeee;
+    border: 1px solid #93989c;
+}
+.choose div:first-child{
+    height: 30px;
+}
+.choose div:first-child a{
+    float: right;
+    padding-right: 15px;
+    display: inline-block;
+    line-height: 30px;
+    color: #93989c;
+}
+.choose div:last-child table:last-child{
+    display: none;
+}
+.c-r-top{
+    height: 300px;
 }

@@ -31,5 +31,34 @@ $(function(){
         $(this).find('span').css('top','-15px');
         $(this).css('color','#93989c');
         $(this).find('.list').css('display','none');
+    });
+    $('.bg').each(function(){
+        var _width = $(this).parent().next().text();
+        $(this).find('.main').css('width',_width);
+    });
+        //var _width = $('.info-table .num').text();//获取百分比数值
+        //$('.info-table .main').css('width',_width);//将数值赋值给main的width
+    $('.choose-h').mouseover(function(){
+        $(this).css('background','#ebf2f8');
+    })
+    $('.choose-h').mouseout(function(){
+        $(this).css('background','#eeeeee');
+    })
+    $('.info-table .tab-h').mouseover(function(){
+        $(this).css('background','#ebf2f8')
+    })
+    $('.info-table .tab-h').mouseout(function(){
+        $(this).css('background','#eeeeee')
+    })
+    $('.choose-h').click(function(){
+        var _index = $(this).index();
+        if(_index == 0){
+            $('.choose div:last-child table:last-child').css('display','none');
+            $('.choose div:last-child table:first-child').css('display','block');
+        }
+        else{
+            $('.choose div:last-child table:first-child').css('display','none');
+            $('.choose div:last-child table:last-child').css('display','block');
+        }
     })
 });
